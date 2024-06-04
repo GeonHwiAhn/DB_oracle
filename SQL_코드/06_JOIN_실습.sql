@@ -111,7 +111,6 @@ AND JOB_NAME = '대리' AND LOCAL_NAME LIKE 'ASIA%';
 
 
 
-
 --1. D5 부서에 속한 직원들의 이름과 직급명 조회
 --테이블 EMPLOYEE JOB
 SELECT e.EMP_NAME, j.JOB_NAME
