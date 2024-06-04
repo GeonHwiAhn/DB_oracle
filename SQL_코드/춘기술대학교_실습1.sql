@@ -1,17 +1,18 @@
 /*춘 대학교 탐방기*/
+
 --1. 춘 기술대학교 학과 이름과 계열 조회
 --컬럼명 학과명 계열로 표시
-
 SELECT DEPARTMENT_NAME AS "학과명", CATEGORY "계열"
 FROM TB_DEPARTMENT;
+
 
 --2. 학과의 학과 정원을 조회
 SELECT DEPARTMENT_NAME || '의 정원은 ' || CAPACITY || ' 명 입니다.'
 FROM TB_DEPARTMENT;
 
+
 --3. 국문학과에 다니는 여학생 중에 현재 휴학중인 여학생 조회
 --국문학과 코드 DEPARTMENT_NO 001
-
 SELECT * FROM TB_STUDENT;
 
 SELECT *
