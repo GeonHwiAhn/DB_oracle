@@ -1,0 +1,42 @@
+CREATE TABLE USERS(
+USER_ID NUMBER NOT NULL,
+NAME VARCHAR2(50) NOT NULL,
+EMAIL VARCHAR2(100) NOT NULL,
+PASSWORD VARCHAR2(100) NOT NULL,
+CREATEDDATE DATE DEFAULT SYSDATE
+);
+
+CREATE SEQUENCE SQ1;
+
+INSERT INTO USERS(USER_ID, NAME, EMAIL, PASSWORD)
+VALUES(sq1.nextval, '홍길동', 'hong@example.com', 'password123');
+
+INSERT INTO USERS(USER_ID, NAME, EMAIL, PASSWORD)
+VALUES(sq1.nextval, '김철수', 'kim@example.com', 'mypassword');
+
+INSERT INTO USERS(USER_ID, NAME, EMAIL, PASSWORD)
+VALUES(sq1.nextval, '이영희', 'lee@example.com', 'securepass');
+
+
+
+CREATE TABLE board(
+POSTID NUMBER NOT NULL,
+USERID NUMBER NOT NULL,
+TITLE VARCHAR2(200) NOT NULL,
+CONTENT CLOB NOT NULL,
+CREATEDDATE DATE DEFAULT SYSDATE
+);
+
+CREATE SEQUENCE SQ2;
+
+
+INSERT INTO board(POSTID, USERID, TITLE, CONTENT)
+VALUES(sq2.nextval, sq2.currval, '첫 번째 게시물', '이것은 첫 번째 게시물의 내용입니다.');
+
+INSERT INTO board(POSTID, USERID, TITLE, CONTENT)
+VALUES(sq2.nextval, sq2.currval, '두 번째 게시물', '이것은 두 번째 게시물의 내용입니다.');
+
+INSERT INTO board(POSTID, USERID, TITLE, CONTENT)
+VALUES(sq2.nextval, sq2.currval, '세 번째 게시물', '이것은 세 번째 게시물의 내용입니다.');
+
+
