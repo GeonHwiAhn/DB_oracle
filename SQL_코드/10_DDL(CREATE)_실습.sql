@@ -157,7 +157,7 @@ DELETE FROM DRINK_COMPANY WHERE DRINK_ID =1; --고가콜라 삭제
 SELECT * FROM SOFTS; --고가콜라 삭제됨에 따라 콜라, 사이다 삭제
 
 
-
+INSERT INTO DRINK_COMPANY VALUES(1, '고가콜라', '서울시 강남구', '02-1234-5678');
 
 
 
